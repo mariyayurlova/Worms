@@ -20,7 +20,7 @@
  13. npm install webpack-dev-server --save-dev
  *
  */
-const THEME_NAME = 'FalconGlen';
+const THEME_NAME = 'Sinevo';
 
 
 let entries = {
@@ -68,8 +68,8 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'src'),
         publicPath: '/src/',
-        filename: 'js/[name]' + (DEV_MODE ? '.js' : '.[hash].min.js'),
-        chunkFilename: 'js/[name]' + (DEV_MODE ? '.js' : '.[hash].min.js'),
+        filename: 'js/[name]' + (DEV_MODE ? '.js' : '.min.js'),
+        chunkFilename: 'js/[name]' + (DEV_MODE ? '.js' : '.min.js'),
         library: '[name]',
     },
     optimization: {
@@ -179,7 +179,7 @@ module.exports = {
                         loader: 'file-loader',
                         options: {
                             outputPath: './icons/',
-                            name: '[name].[hash:6].[ext]',
+                            name: '[name].[ext]',
                             publicPath: WP ? `/wp-content/themes/${THEME_NAME}/src/icons/` : '/src/icons/'
 
                         }
@@ -194,7 +194,7 @@ module.exports = {
                         loader: 'file-loader',
                         options: {
                             outputPath: './fonts/',
-                            name: '[name].[hash:6].[ext]',
+                            name: '[name].[ext]',
                             publicPath: WP ? `/wp-content/themes/${THEME_NAME}/src/fonts/` : '/src/fonts/'
                         }
                     }
@@ -208,7 +208,7 @@ module.exports = {
                         loader: 'file-loader',
                         options: {
                             outputPath: './video/',
-                            name: '[name].[hash:6].[ext]',
+                            name: '[name].[ext]',
                             publicPath: WP ? `/wp-content/themes/${THEME_NAME}/src/video/` : '/src/video/'
                         }
                     }
@@ -225,7 +225,7 @@ module.exports = {
             }
         },
         new ExtractTextPlugin({
-            filename: 'css/[name]' + (DEV_MODE ? '.css' : '.[hash].min.css'),
+            filename: 'css/[name]' + (DEV_MODE ? '.css' : '.min.css'),
             disable: false,
             allChunks: true
         }),
