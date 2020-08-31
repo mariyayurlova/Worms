@@ -1,3 +1,37 @@
 mixin header()
     +b.header
-    //+e.IMG.blur-image1(src=require('./../images/image1.png'), alt='Background')
+        .container
+            +e.inner
+                +e.A.logo(href="/")
+                    +e.IMG.logo-image(src=require('./../images/logo.svg'), alt='Logo')
+                +e.menu
+                    +e.UL.menu-list
+                        +e.LI.menu-item.with-sub
+                            A(href="/") Квесты
+                            +e.UL.sublist
+                                +e.LI.subitem
+                                    A(href="/") Пиратское приключение
+                                +e.LI.subitem
+                                    A(href="/") Школа фокусников
+                                +e.LI.subitem
+                                    A(href="/") Ниндзя квест
+                                +e.LI.subitem
+                                    A(href="/") Курс  молодого бойца
+                        +e.LI.menu-item
+                            A(href="/") Аниматоры
+                        +e.LI.menu-item
+                            A(href="/") Игры
+                        +e.LI.menu-item
+                            A(href="/") Услуги
+                        +e.LI.menu-item
+                            A(href="/") Цены
+                        +e.LI.menu-item
+                            A(href="/") Контакты
+                +e.humburger
+                    button.hamburger.hamburger--squeeze(type='button')
+                        span.hamburger-box
+                            span.hamburger-inner
+                +e.info
+                    A(href="tel:+375 (29) 885-97-88")
+                        strong +375 (29)
+                        | 885-97-88

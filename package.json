@@ -1,5 +1,5 @@
 {
-    "name": "FalconGlen",
+    "name": "Sinevo",
     "version": "0.0.1",
     "scripts": {
         "macwp": "NODE_ENV=wp-production webpack --mode production",

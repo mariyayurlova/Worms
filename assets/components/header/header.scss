@@ -1,6 +1,324 @@
 @import "./../../common/constants";
-@import "./../../../node_modules/hamburgers/_sass/hamburgers/hamburgers";
+@import "./../../../node_modules/hamburgers/dist/hamburgers.css";
 
 .header{
+
+  overflow-y: hidden;
+  width: 100%;
+  background: #FFFFFF;
+  padding: 30px 20px;
+  box-sizing: border-box;
+
+  @include lg{
+    padding: 0 0;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 95px rgba(0, 0, 0, 0.1);
+    overflow: unset;
+  }
+
+  .container {
+    padding   : {
+      left  : 0;
+      right : 0;
+    }
+    position : unset;
+
+    @include sm {
+      padding   : {
+        left  : 1rem;
+        right : 1rem;
+      }
+      position : unset;
+    }
+
+    @include md {
+      padding   : {
+        left  : 1.5rem;
+        right : 1.5rem;
+      }
+    }
+
+    @include lg {
+      padding   : {
+        left  : 2.5rem;
+        right : 2.5rem;
+      }
+
+    }
+
+    @include hd {
+      padding   : {
+        left  : 100px;
+        right : 100px;
+      }
+    }
+
+    @include xhd{
+      padding   : {
+        left  : 380px;
+        right : 380px;
+      }
+    }
+
+  }
+
+  &__inner{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    width: 100%;
+
+    @include lg{
+      align-items: center;
+    }
+  }
+
+  &__info{
+    display: none;
+
+    @include lg{
+      display: flex;
+      align-content: center;
+
+      a{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 32px;
+        display: flex;
+        align-items: center;
+        text-align: right;
+        color: #000000;
+
+        strong{
+          font-style: normal;
+          font-weight: 600;
+          font-size: 26px;
+          line-height: 32px;
+          display: flex;
+          align-items: center;
+          text-align: right;
+          color: #C8C8C8;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+
+  &__logo{
+    display: flex;
+    align-content: center;
+    position: relative;
+    z-index: 999;
+  }
+
+  &__logo-image{
+    height: 49px;
+    width: 146px;
+
+    @include lg{
+      height: 62px;
+      width: 188px;
+    }
+  }
+
+  &__humburger{
+    position: relative;
+
+    @include lg{
+      display: none;
+    }
+  }
+
+  &__menu{
+    display: block;
+    position: absolute;
+    right: 0;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 95px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    top: 0;
+    height: 0;
+    padding: 110px 20px 0 20px;
+    transition: 1s all;
+    overflow: hidden;
+
+    &_active{
+      height: 100vh;
+      transition: 1s all;
+    }
+
+    @include lg{
+      height: 110px;
+      padding: 0;
+      position: relative;
+      background: transparent;
+      box-shadow: none;
+      width: auto;
+      overflow: unset;
+      display: flex;
+      align-items: center;
+
+    }
+
+
+  }
+
+  &__menu-list{
+    padding-left: 0;
+
+    @include lg{
+      display: flex;
+      align-content: center;
+      margin-block-start: 0;
+      margin-block-end: 0;
+    }
+
+  }
+
+  .with-sub{
+
+    @include lg{
+      display: flex;
+      align-items: center;
+
+      &:after{
+        content: '';
+        background: url("./../../images/triangle.svg");
+        width: 5.3px;
+        height: 5.3px;
+        min-width: 5.3px;
+        min-height: 5.3px;
+        display: block;
+        margin-left: 5px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+
+  }
+
+  &__menu-item{
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+
+    @include lg{
+
+      position: relative;
+      height: 110px;
+
+        &:hover{
+
+          a{
+            transition: .5s all;
+            color: #059CAF;
+          }
+
+        }
+
+      &_active{
+
+        .header__sublist{
+          opacity: 1;
+          z-index: 999;
+          transition: .5s all;
+        }
+
+      }
+
+    }
+
+    a{
+      font-style: normal;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 27px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #2A2E30;
+
+      @include lg{
+        font-size: 22px;
+        line-height: 27px;
+        transition: .5s all;
+      }
+    }
+
+    @include lg{
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-bottom: 0;
+    }
+
+    @include hd{
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+  }
+
+  &__sublist{
+    display: none;
+
+    @include lg{
+      margin-block-start: 0;
+      margin-block-end: 0;
+      display: block;
+      position: absolute;
+      text-align: left;
+      top: 110px;
+      left: 0px;
+      background: #FFFFFF;
+      box-shadow: 0px 10px 95px rgba(0, 0, 0, 0.1);
+      padding: 20px 30px;
+      width: 300px;
+      border-top: 4px solid #059CAF;
+      opacity: 0;
+      z-index: -1;
+      transition: .5s all;
+    }
+
+    @include hd{
+      width: 422px;
+      padding: 40px 60px;
+    }
+  }
+
+  &__subitem{
+    list-style: none;
+    text-align: left;
+
+    &:hover{
+
+      a{
+        text-decoration-line: underline;
+        color: #1E82BD !important;
+        transition: .5s all;
+      }
+
+    }
+
+    a{
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 27px;
+      color: #393939 !important;
+      text-align: left;
+      transition: .5s all;
+
+
+      @include hd{
+        font-size: 22px;
+        line-height: 27px;
+      }
+
+    }
+
+  }
 
 }
