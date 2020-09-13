@@ -6,5 +6,14 @@ import Swiper from 'swiper';
 var swiper = new Swiper('.banner-main__container', {
     pagination: {
         el: '.banner-main__pagination',
+        clickable: true,
     },
+    breakpoints: {
+        1024: {
+            pagination: {
+                el: '.banner-main__pagination',
+                clickable: true,
+            }
+        }
+    }
 });

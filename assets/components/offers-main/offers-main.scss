@@ -1,0 +1,93 @@
+@import "./../../common/constants";
+
+.offers-main{
+
+  padding: 60px 0;
+
+  &__title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    color: #3E3B3B;
+    display: block;
+    width: 100%;
+
+    @include sm{
+      font-size: 36px;
+      line-height: 45px;
+      text-align: left;
+    }
+  }
+
+  &__list{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @include sm{
+
+    }
+  }
+
+  &__item{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 40px;
+
+    @include sm{
+      width: 23%;
+    }
+  }
+
+  &__image{
+    margin-bottom: 24px;
+  }
+
+  &__item-title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #3E3B3B;
+
+    @include hd{
+      font-size: 20px;
+      line-height: 25px;
+    }
+
+
+    &:after{
+      content: '';
+      width: 41px;
+      height: 3px;
+      background: #059CAF;
+      display: block;
+      margin-top: 13px;
+      margin-bottom: 10px;
+    }
+
+  }
+
+  &__desc{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #3E3B3B;
+
+    @include hd{
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+  }
+
+
+
+}

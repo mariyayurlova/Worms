@@ -2,7 +2,43 @@ mixin banner-main()
     +b.banner-main
         +e.container.swiper-container
             +e.wrapper.swiper-wrapper
-                +e.slide.swiper-slide Slide 1
-                +e.slide.swiper-slide Slide 2
-                +e.slide.swiper-slide Slide 3
+                +e.slide.swiper-slide(style=`background-image:url(${require("./../images/slide-home.png")})`)
+                    +e.back
+                    .container
+                        +e.wrapper
+                            +e.content
+                                +e.SPAN.title Делаем дни рождения и праздники для детей от 3 лет
+                                +e.SPAN.desc
+                                    UL
+                                        LI Летние и зимние активные программы
+                                        LI Проведение квестов как на открытом воздухе, так и в помещении
+                                        LI Call of Duty в реальности – оценят дети, понравится взрослым
+                                +e.A.button Узнать больше
+                            +e.IMG.image(src=require('./../images/image-slide-home.png'), alt='Logo')
+                +e.slide.swiper-slide(style=`background-image:url(${require("./../images/slide-home.png")})`)
+                    +e.back
+                    .container
+                        +e.wrapper
+                            +e.content
+                                +e.SPAN.title Делаем дни рождения и праздники для детей от 3 лет
+                                +e.SPAN.desc
+                                    UL
+                                        LI Летние и зимние активные программы
+                                        LI Проведение квестов как на открытом воздухе, так и в помещении
+                                        LI Call of Duty в реальности – оценят дети, понравится взрослым
+                                +e.A.button Узнать больше
+                            +e.IMG.image(src=require('./../images/image-slide-home.png'), alt='Logo')
+                +e.slide.swiper-slide(style=`background-image:url(${require("./../images/slide-home.png")})`)
+                    +e.back
+                    .container
+                        +e.wrapper
+                            +e.content
+                                +e.SPAN.title Делаем дни рождения и праздники для детей от 3 лет
+                                +e.SPAN.desc
+                                    UL
+                                        LI Летние и зимние активные программы
+                                        LI Проведение квестов как на открытом воздухе, так и в помещении
+                                        LI Call of Duty в реальности – оценят дети, понравится взрослым
+                                +e.A.button Узнать больше
+                            +e.IMG.image(src=require('./../images/image-slide-home.png'), alt='Logo')
             +e.pagination.swiper-pagination

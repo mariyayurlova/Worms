@@ -1,0 +1,23 @@
+mixin offers-main()
+    +b.offers-main
+        .container
+            +e.inner
+                +e.SPAN.title Преимущества парка
+                +e.list
+                    +e.item
+                        +e.image(src=require('./../images/offers1.svg'), alt='Logo')
+                        +e.SPAN.item-title Близость к городу!
+                        +e.SPAN.desc Всего 4 км. от Минска
+                    +e.item
+                        +e.image(src=require('./../images/offers2.svg'), alt='Logo')
+                        +e.SPAN.item-title Отдых за городом
+                        +e.SPAN.desc Разнообразные площадки! 7 игровых зон
+                    +e.item
+                        +e.image(src=require('./../images/offers3.svg'), alt='Logo')
+                        +e.SPAN.item-title Площадки для пейнтбола Минск
+                        +e.SPAN.desc Места хватит всем!  60 беседок
+                    +e.item
+                        +e.image(src=require('./../images/offers4.svg'), alt='Logo')
+                        +e.SPAN.item-title Аренда беседок под Минском
+                        +e.SPAN.desc Детская площадка и игровая комната
+

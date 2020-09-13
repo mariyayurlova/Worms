@@ -124,6 +124,7 @@
 
   &__humburger{
     position: relative;
+    z-index: 999;
 
     @include lg{
       display: none;
@@ -146,6 +147,7 @@
     &_active{
       height: 100vh;
       transition: 1s all;
+      z-index: 998;
     }
 
     @include lg{
@@ -322,3 +324,4 @@
   }
 
 }
+

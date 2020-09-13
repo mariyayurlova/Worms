@@ -1,0 +1,93 @@
+mixin quests-main()
+    +b.quests-main(style=`background-image:url(${require("./../images/quests-main.png")})`)
+        +e.back
+        .container
+            +e.inner
+                +e.SPAN.title Квесты
+                +e.container.swiper-container
+                    +e.wrapper.swiper-wrapper
+                        +e.slide.swiper-slide
+                            +e.wrapper-text
+                                +e.wrapper-div
+                                +e.wrapper-image-div
+                                    +e.IMG.wrapper-image(src=require('./../images/quests1.png'), alt='Logo')
+                            +e.content
+                                +e.SPAN.content-title Пиратское приключение
+                                +e.SPAN.content-text Возраст:
+                                    SPAN 4 – 9 лет
+                                +e.SPAN.content-text Сложность:
+                                    +e.content-complexity
+                                        span.fa.fa-star.checked
+                                        span.fa.fa-star.checked
+                                        span.fa.fa-star.checked
+                                        span.fa.fa-star
+                                        span.fa.fa-star
+                                +e.SPAN.content-text Время:
+                                    SPAN ≈ 2 часа
+                                +e.SPAN.content-text Анимация:
+                                    SPAN да
+                                +e.A.button(href="/") Забронировать
+                        +e.slide.swiper-slide
+                            +e.wrapper-text
+                                +e.wrapper-div
+                                +e.wrapper-image-div
+                                    +e.IMG.wrapper-image(src=require('./../images/quests2.png'), alt='Logo')
+                            +e.content
+                                +e.SPAN.content-title Пиратское приключение
+                                +e.SPAN.content-text Возраст:
+                                    SPAN 4 – 9 лет
+                                +e.SPAN.content-text Сложность:
+                                    +e.content-complexity
+                                        span.fa.fa-star.checked
+                                        span.fa.fa-star.checked
+                                        span.fa.fa-star.checked
+                                        span.fa.fa-star
+                                        span.fa.fa-star
+                                +e.SPAN.content-text Время:
+                                    SPAN ≈ 2 часа
+                                +e.SPAN.content-text Анимация:
+                                    SPAN да
+                                +e.A.button(href="/") Забронировать
+                        +e.slide.swiper-slide
+                            +e.wrapper-text
+                                +e.wrapper-div
+                                +e.wrapper-image-div
+                                    +e.IMG.wrapper-image(src=require('./../images/quests3.png'), alt='Logo')
+                            +e.content
+                                +e.SPAN.content-title Пиратское приключение
+                                +e.SPAN.content-text Возраст:
+                                    SPAN 4 – 9 лет
+                                +e.SPAN.content-text Сложность:
+                                    +e.content-complexity
+                                        span.fa.fa-star.checked
+                                        span.fa.fa-star.checked
+                                        span.fa.fa-star.checked
+                                        span.fa.fa-star
+                                        span.fa.fa-star
+                                +e.SPAN.content-text Время:
+                                    SPAN ≈ 2 часа
+                                +e.SPAN.content-text Анимация:
+                                    SPAN да
+                                +e.A.button(href="/") Забронировать
+                        +e.slide.swiper-slide
+                            +e.wrapper-text
+                                +e.wrapper-div
+                                +e.wrapper-image-div
+                                    +e.IMG.wrapper-image(src=require('./../images/quests4.png'), alt='Logo')
+                            +e.content
+                                +e.SPAN.content-title Пиратское приключение
+                                +e.SPAN.content-text Возраст:
+                                    SPAN 4 – 9 лет
+                                +e.SPAN.content-text Сложность:
+                                    +e.content-complexity
+                                        span.fa.fa-star.checked
+                                        span.fa.fa-star.checked
+                                        span.fa.fa-star.checked
+                                        span.fa.fa-star
+                                        span.fa.fa-star
+                                +e.SPAN.content-text Время:
+                                    SPAN ≈ 2 часа
+                                +e.SPAN.content-text Анимация:
+                                    SPAN да
+                                +e.A.button(href="/") Забронировать
+                    +e.pagination.swiper-pagination
