@@ -1,0 +1,65 @@
+@import "./../../common/constants";
+
+.gift{
+  z-index: 2;
+  display: flex;
+  position: relative;
+  margin-top: 50px;
+  background-image: url(./../../images/gift-desc.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0px 4px 52px rgba(44, 132, 190, 0.29);
+  border-radius: 30px;
+  padding: 36px;
+
+  &__number-text{
+    font-style: normal;
+    font-weight: 999;
+    font-size: 48px;
+    line-height: 61px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+
+  &__title{
+    font-style: normal;
+    font-weight: 999;
+    font-size: 36px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: -12px;
+  }
+
+  &__desc{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    margin-top: 60px;
+    display: flex;
+  }
+
+  &__text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    display: flex;
+    margin-top: 40px;
+  }
+
+}

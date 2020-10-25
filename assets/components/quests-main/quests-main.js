@@ -9,12 +9,23 @@ var swiper = new Swiper('.quests-main__container', {
         el: '.quests-main__pagination',
         clickable: true,
     },
+    breakpointsInverse: true,
     breakpoints: {
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 10
+        },
         1024: {
+            slidesPerView: 3,
             pagination: {
                 el: '.quests-main__pagination',
                 clickable: true,
-            }
+            },
+            spaceBetween: 20
+        },
+        1280: {
+            slidesPerView: 4,
+            spaceBetween: 10
         }
     }
 });
