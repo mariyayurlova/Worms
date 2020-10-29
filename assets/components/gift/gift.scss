@@ -12,6 +12,31 @@
   box-shadow: 0px 4px 52px rgba(44, 132, 190, 0.29);
   border-radius: 30px;
   padding: 36px;
+  flex-direction: column;
+  margin-bottom: 100px;
+
+  @include md{
+    background-image: url(./../../images/gift-mobile.png);
+    flex-direction: row;
+  }
+
+  &__number{
+
+    @include md{
+      background: #055DAF;
+      width: 137px;
+      height: 100%;
+      margin-top: -36px;
+      margin-left: -36px;
+      position: absolute;
+      border-bottom-left-radius: 30px;
+      border-top-left-radius: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+  }
 
   &__number-text{
     font-style: normal;
@@ -26,6 +51,14 @@
     position: absolute;
     top: 10px;
     right: 20px;
+
+    @include md{
+      transform: rotate(-90deg);
+      width: 100%;
+      top: unset;
+      right: unset;
+      font-size: 50px;
+    }
   }
 
   &__title{
@@ -50,6 +83,10 @@
     color: #FFFFFF;
     margin-top: 60px;
     display: flex;
+
+    @include md{
+      margin-top: 10px;
+    }
   }
 
   &__text{
@@ -60,6 +97,107 @@
     color: #FFFFFF;
     display: flex;
     margin-top: 40px;
+
+    @include md{
+      margin-top: 20px;
+    }
+  }
+
+  &__image{
+    display: none;
+
+    @include md{
+      display: block;
+      position: absolute;
+      width: 250px;
+      right: 10px;
+    }
+
+    @include lg{
+      width: 320px;
+      top: -30px;
+      right: 10px;
+    }
+
+    @include hd{
+      width: 360px;
+      top: -70px;
+      right: 50px;
+    }
+  }
+
+
+  &__button{
+    height: 62px;
+    margin-top: 30px;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 51px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 99%;
+    text-align: center;
+    color: #FFFFFF;
+    transition: .5s all;
+    opacity: 1;
+    padding: 0 25px;
+
+
+    &:hover{
+      opacity: .5;
+      transition: .5s all;
+    }
+
+    @include md{
+      max-width: 272px;
+      margin-left: unset;
+      margin-top: auto;
+    }
+
+    @include lg{
+      margin-left: 30px;
+    }
+
+    @include hd{
+      margin-left: 50px;
+    }
+  }
+
+  &__button:after{
+    content: "";
+    display: block;
+    background-image: url("./../../images/next.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 27.87px;
+    height: 4px;
+    min-width: 27.87px;
+    min-height: 4px;
+    margin-left: 5px;
+  }
+
+  &__content{
+
+    @include md{
+      padding-left: 130px;
+      width: 400px;
+    }
+
+    @include lg{
+      width: 500px;
+    }
+
+    @include hd{
+      padding-left: 180px;
+      width: 700px;
+    }
+
   }
 
 }

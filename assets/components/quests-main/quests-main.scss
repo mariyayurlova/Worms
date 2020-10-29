@@ -75,6 +75,8 @@
     text-align: center;
     color: #FFFFFF;
     transition: .5s all;
+    margin-left: auto !important;
+    margin-right: auto !important;
 
     @include lg{
       margin-top: 50px;

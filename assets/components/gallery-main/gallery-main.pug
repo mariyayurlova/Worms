@@ -1,0 +1,18 @@
+mixin gallery-main()
+    +b.gallery-main()
+        .container
+            +e.inner
+                +e.SPAN.title Фото нашего парка
+                +e.content
+                    +e.A.content-link(data-fancybox="gallery" href=require('./../images/gal1.png'))
+                        IMG(src=require('./../images/gal1.png'), alt='Logo')
+                        +e.back
+                            SPAN Смотреть все фото
+                            
+                    +e.A.content-link(data-fancybox="gallery" href=require('./../images/gal2.png'))
+                        IMG(src=require('./../images/gal2.png'), alt='Logo')
+                    +e.A.content-link(data-fancybox="gallery" href=require('./../images/gal3.png'))
+                        IMG(src=require('./../images/gal3.png'), alt='Logo')
+                    +e.A.content-link(data-fancybox="gallery" href=require('./../images/gal4.png'))
+                        IMG(src=require('./../images/gal4.png'), alt='Logo')
+
