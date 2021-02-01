@@ -14,3 +14,6 @@ import './../components/quests-main/quests-main';
 import './../components/sale-main/sale-main';
 import './../components/gift/gift';
 import './../components/gallery-main/gallery-main';
+import './../components/animation/animation';
+import './../components/how/how';
+import './../components/review/review';

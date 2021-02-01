@@ -4,15 +4,16 @@ mixin gallery-main()
             +e.inner
                 +e.SPAN.title Фото нашего парка
                 +e.content
-                    +e.A.content-link(data-fancybox="gallery" href=require('./../images/gal1.png'))
-                        IMG(src=require('./../images/gal1.png'), alt='Logo')
+                    +e.A.content-link(data-fancybox="gallery" href=require('./../images/gal1.png') style=`background-image:url(${require("./../images/gal1.png")})`)
+                    +e.A.content-link(data-fancybox="gallery" href=require('./../images/gal2.png') style=`background-image:url(${require("./../images/gal1.png")})`)
+                    +e.A.content-link(data-fancybox="gallery" href=require('./../images/gal3.png') style=`background-image:url(${require("./../images/gal1.png")})`)
+                    +e.A.content-link(data-fancybox="gallery" href=require('./../images/gal3.png') style=`background-image:url(${require("./../images/gal1.png")})`)
+                    +e.A.content-link(data-fancybox="gallery" href=require('./../images/gal3.png') style=`background-image:url(${require("./../images/gal1.png")})`)
+                    +e.A.content-link(data-fancybox="gallery" href=require('./../images/gal3.png') style=`background-image:url(${require("./../images/gal1.png")})`)
+                    +e.A.content-link(data-fancybox="gallery" href=require('./../images/gal3.png') style=`background-image:url(${require("./../images/gal1.png")})` )
+                    +e.A.content-link(style=`background-image:url(${require("./../images/gal1.png")})` href="#")
                         +e.back
-                            SPAN Смотреть все фото
-                            
-                    +e.A.content-link(data-fancybox="gallery" href=require('./../images/gal2.png'))
-                        IMG(src=require('./../images/gal2.png'), alt='Logo')
-                    +e.A.content-link(data-fancybox="gallery" href=require('./../images/gal3.png'))
-                        IMG(src=require('./../images/gal3.png'), alt='Logo')
-                    +e.A.content-link(data-fancybox="gallery" href=require('./../images/gal4.png'))
-                        IMG(src=require('./../images/gal4.png'), alt='Logo')
+                            SPAN
+                                | Смотреть
+                                BR все фото
 

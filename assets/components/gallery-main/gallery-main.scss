@@ -3,11 +3,82 @@
 
 .gallery-main{
 
+  background: linear-gradient(180deg, #F6FAFC 0%, rgba(255, 255, 255, 0) 88.26%);
+
   &__content-link{
     position: relative;
     background: rgba(0,0,0,.61);
     width: 100%;
     height: 100%;
+  }
+
+  &__title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    color: #3E3B3B;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 72px;
+  }
+
+  &__content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__content-link{
+    width: 24%;
+    height: 369px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    position: relative;
+    
+  }
+
+  &__back{
+    background: rgba(0,0,0,.61);
+    border-radius: 8px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    span{
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 100%;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #FFFFFF;
+      justify-content: center;
+      flex-direction: column;
+
+      &:after{
+        content: '';
+        background-image: url(./../../images/arrow.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        display: block;
+        height: 23.77px;
+        width: 15px;
+        margin-top: 25px;
+      }
+
+    }
+
   }
 
 }

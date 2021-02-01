@@ -1,0 +1,153 @@
+@import "./../../common/constants";
+
+.animation {
+  background: #ffffff;
+  padding-top: 140px;
+  margin-top: -70px;
+
+  &__title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    color: #3E3B3B;
+  }
+
+  &__list{
+    margin-top: 66px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item{
+    width: 24%;
+    background: #FFFFFF;
+    border-radius: 20px;
+    padding: 26px 20px;
+    box-sizing: border-box;
+    transition: .5s all;
+    cursor: pointer;
+
+    &:hover{
+      box-shadow: 0px 6px 79px rgba(92, 190, 255, 0.51);
+      transition: .5s all;
+    }
+  }
+
+  &__item-title{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #059CAF;
+
+  }
+
+  &__item-list{
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item-type{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+
+    &:before{
+      content: '';
+      display: block;
+      width: 4px;
+      height: 4px;
+      min-width: 4px;
+      min-height: 4px;
+      border-radius: 100%;
+      background: #059CAF;
+      margin-right: 10px;
+
+    }
+  }
+
+  &__time{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 92.9%;
+    color: #3E3B3B;
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+
+    span{
+      margin-left: 3px;
+    }
+
+  }
+
+  &__price{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 92.9%;
+    color: #3E3B3B;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+
+    span{
+      margin-left: 3px;
+      color: #059CAF;
+      font-size: 28px;
+    }
+  }
+
+  &__link{
+    height: 62px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background: -o-linear-gradient(357.5deg, #2182BE -47.21%, #58DFDF 216.25%);
+    background: linear-gradient(
+                    92.5deg
+            , #2182BE -47.21%, #58DFDF 216.25%);
+    border-radius: 51px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 99%;
+    text-align: center;
+    color: #FFFFFF;
+    -webkit-transition: .5s all;
+    -o-transition: .5s all;
+    transition: .5s all;
+
+    &::after {
+      content: "";
+      display: block;
+      background-image: url(./../../images/next.png);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 27.87px;
+      height: 4px;
+      min-width: 27.87px;
+      min-height: 4px;
+      margin-left: 5px;
+    }
+  }
+
+}

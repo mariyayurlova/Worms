@@ -1,0 +1,74 @@
+@import "./../../common/constants";
+
+.review {
+
+  margin-top: 50px;
+
+  &__title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #3E3B3B;
+    justify-content: center;
+  }
+
+  &__container{
+    margin-top: 100px;
+  }
+
+  &__slide{
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  &__image-wrap{
+    width: 197px;
+    height: 197px;
+    min-width: 197px;
+    min-height: 197px;
+    border-radius: 100%;
+    overflow: hidden;
+
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__content{
+    margin-left: 67px;
+  }
+
+  .checked {
+    color: #FE8B15 !important;
+  }
+
+  .fa-star{
+    color: #DBDBDB;
+  }
+
+  &__name{
+    margin-top: 30px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #3E3B3B;
+  }
+
+  &__desc{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #3E3B3B;
+
+  }
+
+}

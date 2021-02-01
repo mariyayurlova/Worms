@@ -1,3 +1,40 @@
 mixin footer()
     +b.footer
+        .container
+            +e.SPAN.title Оставить заявку
+            +e.inner
+                +e.FORM.form
+                    +e.item
+                        LABEL Ваше имя
+                        INPUT()
+                    +e.item
+                        LABEL Сообщение
+                        INPUT(placeholder="Текст сообщения")
+                    +e.footer-part
+                        +e.item
+                            LABEL Телефон
+                            INPUT(placeholder="+375 (__) ___-__-__")
+                        +e.item
+                            LABEL E-mail
+                            INPUT(placeholder="Ваш Е-mail")
+                    +e.BUTTON.button Отправить
+                +e.info
+                    +e.SPAN.info-title Свяжитесь с нами позвонив нам по телефонам либо заполнив форму
+                    +e.SPAN.address Адрес: Минская обл. Пуховичский р-н д. Заречаны, 30а
+                    +e.A.phone(href="")
+                        IMG(src=require('./../images/p1.png'), alt='Logo')
+                        SPAN +375 (29) 885-97-88
+                    +e.A.phone(href="")
+                        IMG(src=require('./../images/p2.png'), alt='Logo')
+                        SPAN +375 (29) 685-97-88
+                    +e.A.phone(href="")
+                        IMG(src=require('./../images/p3.png'), alt='Logo')
+                        SPAN +375 (25) 782-53-13
+                    +e.SPAN.info-title E-mail:
+                    +e.SPAN.address worms_club@mail.ru
+    .footer__line
+
+
+
+
 
