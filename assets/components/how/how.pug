@@ -2,40 +2,41 @@ mixin how()
     +b.how
         .container
             +e.SPAN.title Как мы работаем
-            +e.list
-                +e.item
-                    +e.IMG.item-image(src=require('./../images/how1.svg'), alt='Logo')
-                    +e.content
-                        +e.SPAN.number 01.
-                        +e.IMG(src=require('./../images/next.png'), alt='Logo')
-                    +e.SPAN.desc Выбераем площадку для игры
-                +e.item
-                    +e.IMG.item-image(src=require('./../images/how1.svg'), alt='Logo')
-                    +e.content
-                        +e.SPAN.number 02.
-                        +e.IMG(src=require('./../images/next.png'), alt='Logo')
-                    +e.SPAN.desc Консультируемся и заказываем игру по телефонам: +375(29) 88-597-88, +375(29) 68-597-88 либо заполнив форму в контактах
-                +e.item
-                    +e.IMG.item-image(src=require('./../images/how1.svg'), alt='Logo')
-                    +e.content
-                        +e.SPAN.number 03.
-                        +e.IMG(src=require('./../images/next.png'), alt='Logo')
-                    +e.SPAN.desc Приезжаем на выбранную площадку в назначенное время и слушаем инструктаж по правилам игры
-                +e.item
-                    +e.IMG.item-image(src=require('./../images/how1.svg'), alt='Logo')
-                    +e.content
-                        +e.SPAN.number 04.
-                        +e.IMG(src=require('./../images/next.png'), alt='Logo')
-                    +e.SPAN.desc We encourage you to challenge the candidates with interviews, test tasks or code issues to make sure these are the right people for your project
-                +e.item
-                    +e.IMG.item-image(src=require('./../images/how1.svg'), alt='Logo')
-                    +e.content
-                        +e.SPAN.number 05.
-                        +e.IMG(src=require('./../images/next.png'), alt='Logo')
-                    +e.SPAN.desc You select suitable candidates.
-                +e.item
-                    +e.IMG.item-image(src=require('./../images/how1.svg'), alt='Logo')
-                    +e.content
-                        +e.SPAN.number 06.
-                        +e.IMG(src=require('./../images/next.png'), alt='Logo')
-                    +e.SPAN.desc We onboard to project and start working.
+            +e.container.swiper-container
+                +e.list.swiper-wrapper
+                    +e.item.swiper-slide
+                        +e.IMG.item-image(src=require('./../images/how1.svg'), alt='Logo')
+                        +e.content
+                            +e.SPAN.number 01.
+                            +e.IMG(src=require('./../images/next.png'), alt='Logo')
+                        +e.SPAN.desc Выбераем площадку для игры
+                    +e.item.swiper-slide
+                        +e.IMG.item-image(src=require('./../images/how1.svg'), alt='Logo')
+                        +e.content
+                            +e.SPAN.number 02.
+                            +e.IMG(src=require('./../images/next.png'), alt='Logo')
+                        +e.SPAN.desc Консультируемся и заказываем игру по телефонам: +375(29) 88-597-88, +375(29) 68-597-88 либо заполнив форму в контактах
+                    +e.item.swiper-slide
+                        +e.IMG.item-image(src=require('./../images/how1.svg'), alt='Logo')
+                        +e.content
+                            +e.SPAN.number 03.
+                            +e.IMG(src=require('./../images/next.png'), alt='Logo')
+                        +e.SPAN.desc Приезжаем на выбранную площадку в назначенное время и слушаем инструктаж по правилам игры
+                    +e.item.swiper-slide
+                        +e.IMG.item-image(src=require('./../images/how1.svg'), alt='Logo')
+                        +e.content
+                            +e.SPAN.number 04.
+                            +e.IMG(src=require('./../images/next.png'), alt='Logo')
+                        +e.SPAN.desc We encourage you to challenge the candidates with interviews, test tasks or code issues to make sure these are the right people for your project
+                    +e.item.swiper-slide
+                        +e.IMG.item-image(src=require('./../images/how1.svg'), alt='Logo')
+                        +e.content
+                            +e.SPAN.number 05.
+                            +e.IMG(src=require('./../images/next.png'), alt='Logo')
+                        +e.SPAN.desc You select suitable candidates.
+                    +e.item.swiper-slide
+                        +e.IMG.item-image(src=require('./../images/how1.svg'), alt='Logo')
+                        +e.content
+                            +e.SPAN.number 06.
+                            +e.IMG(src=require('./../images/next.png'), alt='Logo')
+                        +e.SPAN.desc We onboard to project and start working.

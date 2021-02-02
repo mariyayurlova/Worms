@@ -15,14 +15,22 @@
   &__title{
     font-style: normal;
     font-weight: bold;
-    font-size: 36px;
-    line-height: 44px;
+    font-size: 24px;
+    line-height: 29px;
     text-align: center;
     color: #3E3B3B;
     display: flex;
     justify-content: center;
-    margin-top: 25px;
-    margin-bottom: 72px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+
+    @include md{
+      font-size: 36px;
+      margin-top: 25px;
+      line-height: 44px;
+      margin-bottom: 72px;
+      margin-top: 70px;
+    }
   }
 
   &__content{
@@ -32,11 +40,35 @@
   }
 
   &__content-link{
-    width: 24%;
+    width: 100%;
     height: 369px;
     margin-bottom: 15px;
     border-radius: 8px;
     position: relative;
+    display: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &:nth-child(1){
+      display: block;
+    }
+    &:nth-child(8){
+      display: block;
+    }
+
+    @include sm{
+      width: 48%;
+      display: block;
+    }
+
+    @include md{
+      width: 32%;
+    }
+
+    @include lg{
+      width: 24%;
+    }
     
   }
 

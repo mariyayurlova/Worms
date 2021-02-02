@@ -17,14 +17,27 @@
   }
 
   &__container{
-    margin-top: 100px;
+    margin-top: 30px;
+
+    @include md{
+      margin-top: 100px;
+    }
   }
 
   &__slide{
     display: flex;
     align-items: center;
-    padding-left: 100px;
-    padding-right: 100px;
+    flex-direction: column;
+
+    @include sm{
+      flex-direction: row;
+    }
+
+
+    @include lg{
+      padding-left: 100px;
+      padding-right: 100px;
+    }
   }
 
   &__image-wrap{
@@ -42,7 +55,17 @@
   }
 
   &__content{
-    margin-left: 67px;
+    margin-top: 30px;
+
+
+    @include sm{
+      margin-left: 20px;
+      margin-top: 0;
+    }
+
+    @include lg{
+      margin-left: 67px;
+    }
   }
 
   .checked {

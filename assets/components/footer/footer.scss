@@ -21,16 +21,31 @@
   &__inner{
     display: flex;
     margin-top: 57px;
+    flex-direction: column;
+
+    @include sm{
+      flex-direction: row;
+    }
   }
 
   &__form{
-    width:50%;
-    padding-right: 50px;
+    width: 100%;
     box-sizing: border-box;
+
+    @include sm{
+      width:50%;
+      padding-right: 50px;
+    }
   }
 
   &__info{
-    width: 50%;
+    width: 100%;
+    margin-top: 30px;
+
+    @include sm{
+      width: 50%;
+      margin-top: 0;
+    }
   }
 
   &__item{

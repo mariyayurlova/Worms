@@ -8,6 +8,7 @@
   position: relative;
   margin-top: 200px;
 
+
   &__title{
     font-style: normal;
     font-weight: bold;
@@ -23,6 +24,7 @@
       font-size: 36px;
       line-height: 45px;
       text-align: left;
+
     }
   }
 
@@ -80,7 +82,9 @@
 
     @include lg{
       margin-top: 50px;
-      display: none;
+      visibility: hidden;
+      opacity: 0;
+      transition: .5s all;
     }
 
     &:hover{
@@ -132,7 +136,9 @@
 
       @include lg{
         .quests-main__button{
-          display: flex;
+          visibility: visible;
+          opacity: 1;
+          transition: .5s all;
         }
       }
 
